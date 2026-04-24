@@ -16,7 +16,7 @@ public class SC_PlatformTile : MonoBehaviour
     public Transform endPoint; 
     public List<ObjectPoolingData> objectData; 
     private List<GameObject> objectActivateList = new List<GameObject>(); 
-
+    [SerializeField] private LayerMask groundLayerMask;
     public void PrepareTile() { 
         DeactivateAllObjects();
         foreach(ObjectPoolingData objUnique in objectData) 

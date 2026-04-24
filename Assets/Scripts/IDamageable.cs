@@ -1,0 +1,24 @@
+using UnityEngine;
+
+// Grouped for readability 
+[System.Serializable]
+public struct DamageInfo { 
+    public float amount;
+    public Vector3 hitPoint; 
+    public Vector3 hitDirection;
+    public GameObject attacker; 
+
+
+    public DamageInfo(float amount, Vector3 hitPoint, Vector3 hitDirection, GameObject attacker) { 
+        this.amount = amount;
+        this.hitPoint = hitPoint; 
+        this.hitDirection = hitDirection;
+        this.attacker = attacker;
+    }
+} 
+
+
+public interface IDamageable 
+{
+    void TakeDamage(DamageInfo info); 
+}

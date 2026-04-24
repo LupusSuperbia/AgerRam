@@ -15,6 +15,7 @@ public enum PatternTile{
 
 public class SC_GroundGenerator : MonoBehaviour
 {       
+    
     public Camera mainCamera;  
     public Transform playerTransform;
     public Transform startPoint; 
@@ -80,6 +81,11 @@ public class SC_GroundGenerator : MonoBehaviour
         
         if(spawnedTiles[0].endPoint.position.z < playerTransform.position.z - 35f)
         {   
+           RecycleTile();
+        } 
+        
+    }
+    public void RecycleTile() { 
             SC_PlatformTile tileTmp = spawnedTiles[0];
             
             tileTmp.PrepareTile();
@@ -87,39 +93,12 @@ public class SC_GroundGenerator : MonoBehaviour
             tileTmp.transform.position = spawnedTiles[spawnedTiles.Count-1].endPoint.position - tileTmp.startPoint.localPosition;
             // tileTmp.ActivateRandomObstacle();
             spawnedTiles.Add(tileTmp);
-        } 
-        if (gameOver || !gameStarted) { 
-            if(Keyboard.current.spaceKey.wasPressedThisFrame) { 
-                if(gameOver) { 
-                    Scene scene = SceneManager.GetActiveScene();
-                    SceneManager.LoadScene(scene.name);
-                } 
-                else { 
-                    gameStarted = true;
-                }
-            }
-        }
     }
-
     public void ModifySpeed(float amount) {
         movingSpeed += amount;
         movingSpeed = Mathf.Clamp(movingSpeed, 5f, maxSpeed);         
          
     }
 
-    void OnGUI() {
-        if(gameOver) {
-            GUI.color = Color.red;
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 200, 200), "Game Over\nYour score is: " + ((int)score) + "\nPress 'Space' to restart");
-        }
-        else { 
-            if(!gameStarted){ 
-                GUI.color = Color.red;
-                GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 200, 200), "Press 'Space' to start");
-            }
-        }
-
-        GUI.color = Color.green; 
-        GUI.Label(new Rect(5,5,200,25), "Score:" + ((int)score));
-    }
+  
 }

@@ -11,7 +11,7 @@ public class ObjectConfig {
 
 }
 
-public enum ObjectType {Obstacle, Money, Enemy, Cars, Walls, Trash}
+public enum ObjectType {Obstacle, Money, Enemy, Cars, Walls, Trash, Bullet}
 
 public class ObjectPooling : MonoBehaviour
 {   

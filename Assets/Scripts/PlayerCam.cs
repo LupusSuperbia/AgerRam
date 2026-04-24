@@ -8,12 +8,17 @@ public class PlayerCam : MonoBehaviour
     public float sensX; 
 
     public Transform orientation; 
-
+    public Rigidbody r;
+    public Camera mainCam;
     float xRotation;
     float yRotation; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake() { 
+        mainCam = GetComponent<Camera>();
+    }
+   
     void Start()
-    {
+    {   
         Cursor.lockState = CursorLockMode.Locked; 
         Cursor.visible = false;
     }
