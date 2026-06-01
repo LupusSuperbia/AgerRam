@@ -6,9 +6,7 @@ using System;
 public class FallingState : PlayerState {
     public new string name ="Falling"; 
 
-
     public override void EnterState(SC_IRPlayer player){
-       
     }
 
     public override void UpdateState(SC_IRPlayer player){

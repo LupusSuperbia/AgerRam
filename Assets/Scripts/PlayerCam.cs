@@ -1,47 +1,51 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 public class PlayerCam : MonoBehaviour
-{   
-    public float sensY; 
-    public float sensX; 
+{
+    public float sensY = 0.25f;
+    public float sensX = 0.25f;
 
-    public Transform orientation; 
+    public Transform orientation;
     public Rigidbody r;
     public Camera mainCam;
     float xRotation;
-    float yRotation; 
+    float yRotation;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake() { 
+    void Awake()
+    {
+        sensY = 0.25f;
+        sensX = 0.25f;
         mainCam = GetComponent<Camera>();
     }
-   
+
     void Start()
-    {   
-        Cursor.lockState = CursorLockMode.Locked; 
+    {
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
-    {   
-       Vector2 mousePosition = Mouse.current.delta.ReadValue();
-       float mouseX =  mousePosition.x  * sensX; 
-       float mouseY = mousePosition.y  * sensY; 
+    {
+        Vector2 mousePosition = Mouse.current.delta.ReadValue();
+        float mouseX = mousePosition.x * sensX;
+        float mouseY = mousePosition.y * sensY;
 
-       yRotation += mouseX; 
-       xRotation -= mouseY; 
-       xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-       yRotation = Mathf.Clamp(yRotation, -90, 90f);
+        yRotation += mouseX;
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        yRotation = Mathf.Clamp(yRotation, -90, 90f);
 
-       transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0);
-       orientation.rotation = Quaternion.Euler(0, yRotation, 0);
-       rayCastTest();
+        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0);
+        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        rayCastTest();
     }
 
 
-    public void rayCastTest(){ 
+    public void rayCastTest()
+    {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
@@ -49,10 +53,11 @@ public class PlayerCam : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 50f))
         {
             // 'hit.collider' es el objeto que estás mirando
-            Debug.DrawLine(ray.origin, hit.point);
+
             // Aquí puedes verificar etiquetas:
-            if(hit.collider.CompareTag(ObjectType.Obstacle.ToString())) {
-                
+            if (hit.collider.CompareTag(ObjectType.Obstacle.ToString()))
+            {
+
             }
         }
     }

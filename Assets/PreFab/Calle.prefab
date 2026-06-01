@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1550130393905878870}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ContainerEnemyAndJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6634469942723527726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: startPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7394667966009421855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: endPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8893790797990241891}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnEnemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 2799633413985791613}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.81, y: 0, z: -40.31273}
+  m_LocalPosition: {x: 8.89, y: 0, z: -33.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6039400297558904858}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnObstacle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7887399995664613736}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnTrash2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ Transform:
   m_GameObject: {fileID: 3021236208729702689}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13, y: 0, z: -32.6}
+  m_LocalPosition: {x: 1.6, y: 0, z: 17.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 570442150295838366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: floorAndWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5294194779392393677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnTrash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ Transform:
   m_GameObject: {fileID: 3587212716302101755}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.01, y: 0, z: -32.6}
+  m_LocalPosition: {x: 0.34, y: 0, z: -32.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5375355247994604829}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 3879286862014189791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12, y: 0, z: -31.1}
+  m_LocalPosition: {x: -9.26, y: 0, z: -31.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3567905354897780649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnEnemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9086149807608467807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 997445443666782518}
   - component: {fileID: 2806519214822078876}
   - component: {fileID: 448831087925646871}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4403500725946513811}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'spawnObstacle2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ Transform:
   m_GameObject: {fileID: 5814460978100300654}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.8, y: 0, z: -13.44296}
+  m_LocalPosition: {x: -8.8, y: 0, z: 17.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -493,7 +493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8375847047262925020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnCar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4475444143127618997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1605366115451281326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnCar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7502251898265121919}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3751599000109776275}
   - component: {fileID: 8309366088479457272}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Calle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,15 +700,26 @@ MonoBehaviour:
   - nombreReferencia: Car
     type: 3
     spawn: {fileID: 9086149807608467807}
-    probability: 0.1
+    probability: 1
   - nombreReferencia: Car
     type: 3
     spawn: {fileID: 8375847047262925020}
-    probability: 0.2
+    probability: 0.96
   - nombreReferencia: Car
     type: 3
     spawn: {fileID: 1605366115451281326}
-    probability: 0.4
+    probability: 1
+  - nombreReferencia: Enemy
+    type: 2
+    spawn: {fileID: 3567905354897780649}
+    probability: 0.5
+  - nombreReferencia: Enemy
+    type: 2
+    spawn: {fileID: 8893790797990241891}
+    probability: 0.5
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &8298965179453758864
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 601040062975470571}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnMoney
   m_TagString: Untagged
   m_Icon: {fileID: 0}

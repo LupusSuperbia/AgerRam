@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: -4143929915410004239}
   - component: {fileID: 5271562899150731513}
   - component: {fileID: -4047969700882943675}
+  - component: {fileID: -5467544476814910617}
+  - component: {fileID: 1349616637167790017}
+  - component: {fileID: -2532007374141418811}
   m_Layer: 0
   m_Name: Box
   m_TagString: Obstacle
@@ -83,7 +86,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!114 &5271562899150731513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +120,44 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.01354456, z: 0.9697127}
+--- !u!114 &-5467544476814910617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440920510270948307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a484b3892e3c2e4b9cc525a8471ad2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoolDamageable
+  _health: {fileID: 0}
+--- !u!114 &1349616637167790017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440920510270948307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1454c9f66a3ebc146ae6a4e0e1fbfe47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 3
+--- !u!114 &-2532007374141418811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440920510270948307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d0421dad5b6c8478ad29651920fda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectBroken
 --- !u!1001 &5896808466969562365
 PrefabInstance:
   m_ObjectHideFlags: 0

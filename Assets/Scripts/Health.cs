@@ -1,23 +1,21 @@
 using UnityEngine;
+using System;
+public class Health : MonoBehaviour
+{
+    [SerializeField] public float maxHealth = 3f;
+    public float _currentHealth { get; private set; }
+    public Action OnDeath;
 
-public class Heath : MonoBehaviour
-{   
-    public float maxHealth = 100f; 
-    public float currentHealth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        currentHealth = maxHealth;
+    void OnEnable() {
+        _currentHealth = maxHealth;
     }
 
-    public void Die(){ 
-        Debug.Log("Se murióoo");
+    public void TakeDamage(float amount) {
+        _currentHealth -= amount;
+
+        if(_currentHealth <= 0) {
+            OnDeath?.Invoke();
+        }
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -1,8 +1,19 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class PoolDamageable : MonoBehaviour, IDamageable
-{   
-    public void TakeDamage(DamageInfo info) {
-        Debug.Log($"Daño: {info.amount} | Impacto: {info.hitPoint} | Dirección : {info.hitDirection} | Atacante: {info.attacker.name}");
+{
+    public Health _health;
+
+    private void Awake() =>  _health = GetComponent<Health>();
+
+
+    public void TakeDamage(DamageInfo info)
+    {
+        _health.TakeDamage(info.amount);
     }
+
+
+
+
 }

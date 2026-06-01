@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1504488150582560996}
   - component: {fileID: 6918817466190941348}
   - component: {fileID: 1682479867465548664}
+  - component: {fileID: 8765967647704949254}
+  - component: {fileID: -6621333610611934845}
   m_Layer: 0
   m_Name: Barrell
   m_TagString: Obstacle
@@ -62,7 +64,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!114 &1504488150582560996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +119,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 2, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8765967647704949254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649741794055424542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a484b3892e3c2e4b9cc525a8471ad2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoolDamageable
+--- !u!114 &-6621333610611934845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649741794055424542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09d88786fa853546a1674c371ac8fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_ObjectPooling
 --- !u!1001 &8801486972219616483
 PrefabInstance:
   m_ObjectHideFlags: 0
